@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        超链接
+            行元素
+            使用<a>标签定义超链接，嵌套除本身外的任何元素
+                href 指定跳转路径
+                    外部网站、内部网站都可,紫色已经访问，蓝色未访问
+                    #   超链接href属性，页面返回顶部,开发时可以做占位符
+                    javascript:;    超链接
+                    任意位置为#（id值）
+                id属性（唯一）
+                    id属性是元素的唯一表示，字母开头区分大小写
+
+                target  指定超链接打开位置
+                    _blank  新页面打开
+                    _self   默认
+            
+            lorem   自动生成英文文本
+            
+
+
+        Alt+Shife+向下箭头向下复制以上内容  
+     -->
+
+     <a href="http://www.baidu.com">hyperlink外部网址</a>
+     <br>
+     <a id="front1" href="06_list.html" target="_blank">hyperlink内部路径 trage </a>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur itaque quas facilis qui beatae consequatur, nulla ea vel soluta inventore magni ad? Corrupti repudiandae modi doloremque ipsa inventore assumenda.</p>
+     <p>
+         Go（又称Golang）是Google开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。
+        罗伯特·格瑞史莫（Robert Griesemer），罗勃·派克（Rob Pike）及肯·汤普逊（Ken Thompson）于2007年9月开始设计Go，稍后Ian Lance Taylor、Russ Cox加入项目。Go是基于Inferno操作系统所开发的。Go于2009年11月正式宣布推出，成为开放源代码项目，并在Linux及Mac OS X平台上进行了实现，后来追加了Windows系统下的实现。在2016年，Go被软件评价公司TIOBE 选为“TIOBE 2016 年最佳语言”。 目前，Go每半年发布一个二级版本（即从a.x升级到a.y）。 [2] 
+        描述编辑 播报
+        Go的语法接近C语言，但对于变量的声明有所不同。Go支持垃圾回收功能。Go的并行模型是以东尼·霍尔的通信顺序进程（CSP）为基础，采取类似模型的其他语言包括Occam和Limbo，但它也具有Pi运算的特征，比如通道传输。在1.8版本中开放插件（Plugin）的支持，这意味着现在能从Go中动态加载部分函数。
+        与C++相比，Go并不包括如枚举、异常处理、继承、泛型、断言、虚函数等功能，但增加了 切片(Slice) 型、并发、管道、垃圾回收、接口（Interface）等特性的语言级支持。Go 2.0版本将支持泛型，对于断言的存在，则持负面态度，同时也为自己不提供类型继承来辩护。
+        不同于Java，Go内嵌了关联数组（也称为哈希表（Hashes）或字典（Dictionaries）），就像字符串类型一样。 [2] 
+        撰写风格编辑 播报
+        在Go中有几项规定，当不匹配以下规定时编译将会产生错误。
+        每行程序结束后不需要撰写分号（;）。
+        大括号（{）不能够换行放置。
+        if判断式和for循环不需要以小括号包覆起来。
+        Go亦有内置gofmt工具，能够自动整理代码多余的空白、变量名称对齐、并将对齐空格转换成Tab
+        Go（又称Golang）是Google开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。
+        罗伯特·格瑞史莫（Robert Griesemer），罗勃·派克（Rob Pike）及肯·汤普逊（Ken Thompson）于2007年9月开始设计Go，稍后Ian Lance Taylor、Russ Cox加入项目。Go是基于Inferno操作系统所开发的。Go于2009年11月正式宣布推出，成为开放源代码项目，并在Linux及Mac OS X平台上进行了实现，后来追加了Windows系统下的实现。在2016年，Go被软件评价公司TIOBE 选为“TIOBE 2016 年最佳语言”。 目前，Go每半年发布一个二级版本（即从a.x升级到a.y）。 [2] 
+        描述编辑 播报
+        Go的语法接近C语言，但对于变量的声明有所不同。Go支持垃圾回收功能。Go的并行模型是以东尼·霍尔的通信顺序进程（CSP）为基础，采取类似模型的其他语言包括Occam和Limbo，但它也具有Pi运算的特征，比如通道传输。在1.8版本中开放插件（Plugin）的支持，这意味着现在能从Go中动态加载部分函数。
+        与C++相比，Go并不包括如枚举、异常处理、继承、泛型、断言、虚函数等功能，但增加了 切片(Slice) 型、并发、管道、垃圾回收、接口（Interface）等特性的语言级支持。Go 2.0版本将支持泛型，对于断言的存在，则持负面态度，同时也为自己不提供类型继承来辩护。
+        不同于Java，Go内嵌了关联数组（也称为哈希表（Hashes）或字典（Dictionaries）），就像字符串类型一样。 [2] 
+        撰写风格编辑 播报
+        在Go中有几项规定，当不匹配以下规定时编译将会产生错误。
+        每行程序结束后不需要撰写分号（;）。
+        大括号（{）不能够换行放置。
+        if判断式和for循环不需要以小括号包覆起来。
+        Go亦有内置gofmt工具，能够自动整理代码多余的空白、变量名称对齐、并将对齐空格转换成Tab
+    </p>
+    <a href="#front1"> 跳转指定位置</a>
+    <br>
+    <a href="#">返回顶部</a>
+
+</body>
+</html>
