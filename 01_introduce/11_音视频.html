@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        audio   引入一个外部音频文件
+            默认不允许用户控制
+            
+            controls    是否允许用户控制播放
+            autoplay    自动播放，多数网站属性不起效
+            loop        循环播放
+
+        除了用src指定文件路径，source亦可,匹配兼容
+
+        video   引入一个外部视频文件
+    -->
+    
+    <audio src="./source/2684347366256392198_hd (1).mp3" controls loop ></audio>
+    <br>
+    <audio src="./source/2684347366256392198_hd (1).mp3" controls loop ></audio>
+    <br>
+    <audio controls>
+        对不起，您的浏览器不支持    
+        <!-- 不支持会显示文字内容；多src优先级指定 -->
+        <source src="./source/2684347366256392198_hd (1).mp3">
+        <source src="./source/2684347366256392198_hd (1).mp3">
+    </audio>
+    <br>
+
+    <video src="./source/b30f5d7b26e08163bd58c2f457d03349_17694503816018407320.mp4" width="200" controls></video>
+    <br>
+    <iframe src="https://www.bilibili.com/video/BV1XJ411X7Ud?p=26&t=2142.0" width="700" height="500" frameborder="0"></iframe>
+
+
+</body>
+</html>

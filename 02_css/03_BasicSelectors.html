@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            元素选择器(Type selectors)
+                根据标签名选中一个元素
+                语法：标签名{}
+
+            id选择器
+                根据元素id选中一个元素
+                语法：#id{}
+
+            class选择器
+                类似id选择器，class可以重复使用，为元素分组
+                同一元素可为多个class
+                语法：.class{}
+
+            通配选择器(Universal selectors)
+                选中页面中所有元素
+                语法：*
+        */
+
+        p{
+            font-size: 12px;
+        }
+
+        #r123{
+            font-size: 50px;
+        }
+
+        .i1{
+            color:blue;
+        }
+
+        /* 
+            并集选择器
+                同时选择多个选择器
+                语法：选择器1，选择器2，选择器3
+        */
+        h1,span
+        {
+            font-size: 77px;
+        }
+
+        /* 
+            交集选择器
+                选择符合多个条件的元素  
+                语法：选择器1.类
+         */
+        h1.i1{
+            font-size: 55px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p id="r123">杨</p>
+    <p class="i1">志</p>
+    <p class="i1 i2">好</p>
+    <p>帅</p>
+    <p>啊</p>
+    <h1 class="i1">！</h1>
+    <h1>！</h1>
+    <h1>！</h1>
+    <span>？？？</span>
+</body>
+</html>
