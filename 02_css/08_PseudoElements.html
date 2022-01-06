@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            伪元素
+                页面中一些特殊不真实存在的元素(特殊位置)
+                使用 ::开头
+
+                ::first-letter  表示第一个字母
+                ::first-line    表示第一行
+                ::selection     表示选中内容
+
+                ::before        表示元素起始位(第一之前)
+                ::after         表示元素结束位(最后之后)
+                    结合content属性使用     (常用)
+         */
+
+        p::first-letter{
+            font-size: 35px;
+        }
+
+        p::first-line{
+            background-color:burlywood;
+        }
+        
+        p::selection{
+            background-color: blue;
+        }
+
+        div::before{
+            content: 'yangzhihaoshuai';
+            font-size: 33px;
+        }
+
+        div::after{
+            content: '😁';
+            font-size: 33px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>helloworld</div>
+
+    <p>
+        <!-- lorem+数字  生成指定字数文本 -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo quod sapiente tempora ab provident! Repellendus quia dolorem eveniet voluptate, quod blanditiis incidunt natus voluptatibus, expedita dolores dignissimos ex quasi dolore veritatis, possimus aliquam harum consequatur eos consequuntur animi. Modi quasi, expedita molestiae assumenda provident deserunt mollitia illum dolores. Cum rem eum dolorum aspernatur quidem iure, expedita ducimus beatae? Deleniti dolores esse quisquam incidunt voluptates explicabo totam, sint aspernatur laborum ut omnis facilis nesciunt sed tenetur illum velit repellendus inventore voluptatem? Ipsam officia consequatur vero dolorem perferendis, quos similique aspernatur assumenda fugiat. Perspiciatis blanditiis odio magni quaerat quisquam, officiis ea, possimus minus unde recusandae voluptatem tenetur tempore velit eos necessitatibus totam, pariatur in. Sapiente, maxime? Necessitatibus, neque autem earum ab quas in culpa recusandae? Cupiditate iure hic quaerat nostrum quam assumenda, beatae velit consequuntur doloribus atque necessitatibus eius minima nihil doloremque officia asperiores nam unde quod neque iusto? Aliquam ullam iure, fugiat quaerat dolorum repudiandae. In quia exercitationem hic optio eaque quasi et maxime, veritatis voluptate nihil qui nemo repudiandae illo minus suscipit dolore pariatur vel voluptatibus molestias rem nam commodi deleniti. Quae molestiae ducimus veniam in cumque eligendi. Quibusdam optio eius quae rerum minima nihil soluta amet ut accusantium? Odio voluptas, velit inventore numquam nesciunt aspernatur cum quis cumque voluptatibus eius hic earum itaque voluptate mollitia necessitatibus, ducimus consequatur. Dolor optio autem deserunt obcaecati dignissimos ipsum voluptatibus, esse aliquid nemo illo praesentium eum possimus, veritatis pariatur excepturi porro voluptates provident expedita architecto corporis dolorem odit? Hic optio dicta, soluta recusandae vel enim, provident cupiditate asperiores repellendus sunt dolores quasi quos qui. Dolorum ut ullam quam? Voluptas deserunt facere vitae cupiditate quod quis, impedit adipisci fugiat! Tempora officiis soluta vel quos. Nam suscipit sit dolorem modi repellat sint, numquam distinctio quibusdam iste mollitia a et reiciendis recusandae necessitatibus doloremque tempora perferendis soluta quasi iusto vero aliquam harum tempore consectetur. Corporis, suscipit alias. Doloribus facere totam veniam, deserunt sapiente alias. Ad soluta quaerat dicta eum omnis delectus, magnam facere assumenda ipsum eaque laudantium tempora unde amet repudiandae dignissimos beatae neque, fugit illo inventore animi. Totam consequatur deserunt omnis distinctio id ratione pariatur nihil nam. Possimus, totam est ab odio velit soluta nihil accusamus sint praesentium, repudiandae, dignissimos voluptatem commodi ad ex numquam harum nisi aliquid quos. Porro reprehenderit laborum placeat culpa, molestias saepe alias ab. Sapiente tenetur iusto inventore asperiores ea blanditiis veniam labore provident animi sequi assumenda accusamus necessitatibus officiis, dolores distinctio aliquam quae temporibus officia quaerat reprehenderit neque ut nemo consectetur vero. Exercitationem ad fugit excepturi, qui, doloribus mollitia animi molestiae ut praesentium ea vero autem obcaecati aperiam magnam, officia alias beatae explicabo impedit itaque culpa eos eveniet perferendis maxime. Qui, reiciendis corrupti?
+    </p>
+</body>
+</html>

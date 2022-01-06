@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        样式继承
+            为一个元素设置样式时会应用到后代元素上
+            继承发生在祖先和后代之间
+            layout、background等不被继承
+
+     -->
+    <style>
+        body{
+            font-size: 30px;
+        }
+        p{
+            color: red;
+            background-color: aqua;
+        }
+
+        div{
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>
+        我是p
+        <br>
+        <span>我是p的span</span>
+    </p>
+
+    <div>
+        我是div
+        <br>
+        <span>我都div的span</span>
+    </div>
+</body>
+</html>

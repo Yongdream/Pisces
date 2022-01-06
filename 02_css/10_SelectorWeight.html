@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            样式冲突
+                不同选择器选中相同元素设置不同值
+            选择器权重  描述越准确优先级越高
+                内联样式        1000
+                id选择器        100
+                类和伪类选择器  10
+                元素选择器      1
+                通配选择器      0
+                继承选择器      无
+
+                比较优先级将权重进行累加排序，分组选择器单独计算
+                优先级相同，使用靠下样式
+
+         */
+        body{
+            font-size: 19px;
+            color: darkblue;
+        }
+        div{
+            color: aqua !important;     /* !important 获取属性的最高优先级 */
+        }
+        .red{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="red">
+        我是div
+    </div>
+</body>
+</html>

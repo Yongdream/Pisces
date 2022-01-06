@@ -18,8 +18,29 @@
 
         /* 
             后代元素选择器
-
+                选中指定元素内的指定后代元素
+                语法：祖先 后代
         */
+
+        div span{
+            color: rgb(113, 172, 4);
+        }
+
+        /* 
+            兄弟元素选择器
+                选中下一个兄弟元素
+                    语法：前一个 + 下一个
+                选择以下所有的兄弟
+                    语法：前一个 ~ 以下
+         */
+
+         p + span{
+             font-size: 77px;
+         }
+
+         p ~ h1{
+             font-size: 66px;
+         }
     </style>
 
 </head>
@@ -45,6 +66,12 @@
             <span>我是p的span</span>
         </p>
         <span>我是div的span</span>
+        <span>我是div的span</span>
+        <span>我是div的span</span>
+        <h1>123</h1>
+        <h1>123</h1>
+        <h1>123</h1>
+
     </div>
 
 </body>

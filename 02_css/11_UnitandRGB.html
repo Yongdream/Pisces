@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            长度单位
+                像素
+                百分比
+                    属性值可以设置为相对父元素属性的百分比
+                em
+                    相对于字体大小惊醒计算
+                    1em = 1font-size 并会随之改变
+
+                rem
+                    相对于根(root)元素字体大小
+                    移动端适配
+         */
+        html{
+            font-size: 20px;
+         }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: blueviolet;
+        }
+        .box3{
+            width: 30em;
+            height: 10rem;
+            background-color: rgb(188, 66, 188, 1);     /* 第四位 0全透明 .5表示半透明 */
+            background-color: hsl(0, 100%, 20%);        /* 百分号 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+</body>
+</html>

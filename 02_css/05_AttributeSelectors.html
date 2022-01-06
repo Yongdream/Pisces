@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            [属性名] 选择含有指定属性的元素
+            [属性名=属性值] 选择指定属性和指定属性值的元素
+            [属性名=^属性值] 选择指定属性和指定属性值开头的元素
+            [属性名=$属性值] 选择指定属性和指定属性值结尾的元素
+            [属性名=*属性值] 选择指定属性和指定属性值包含的元素
+         */
+
+        div[title]{
+            color: orange;
+        }
+
+        div[title=abc]{
+            color: blueviolet;
+            font-size: 35px;
+        }
+        
+        div[title^=abc]{
+            color: blueviolet;
+        }
+
+        div[title$=e]{
+            color: blueviolet;
+            font-size: 22px;
+        }
+
+        div[title*=f]{
+            color: blueviolet;
+            font-size: 70px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div title="abc">123</div>
+    <div title="abcd">234</div>
+    <div title="bcde">345</div>
+    <div title="bcdef">345</div>
+    <div>456</div>
+    <div>567</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        伪类（不存在的类，特殊的类）
+            伪类用来描述一个元素的特殊状态
+            一般情况以冒号开头
+                ：first-child   第一个子元素
+                ：last-child    最后一个子元素
+                ：nth-child()   第n个子元素
+                    (0-无穷)  odd 奇数 even 偶数
+                以上伪类排序按所有子元素排序
+            
+                ：first-of-type
+                ：last-of-type
+                ：nth-of-type
+                功能类似，但是据同类型元素进行排序
+
+                :not()  否定伪类
+                    将符合条件元素从选择器中去除
+
+     -->
+    <style>
+        /* ul > li:first-child{
+            color: orange;
+            font-size: 34px;
+        } */
+
+        /* ul >li:first-of-type{
+            color: orange;
+            font-size: 34px;
+        } */
+
+        ul >li:not(:nth-of-type(3)){
+            color: orange;
+            font-size: 34px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- ul>li*5 -->
+    <ul>
+        <span>abc</span>
+        <span>abc</span>
+        <span>abc</span>
+        <li>123</li>
+        <li>234</li>
+        <li>345</li>
+        <li>456</li>
+        <li>567</li>
+    </ul>
+</body>
+</html>
