@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 1000px;
+            height: 200px;
+            background-color:#bfa;
+
+            border-width: 7px;
+            border-color: crimson;
+            border-style: solid;
+        }
+        .inner{
+            width: auto;
+            height: 200px;
+            background-color: blue; 
+
+            margin-left: 50px;
+                /* 
+                    元素水平方向布局
+                        元素在其父元素中的位置由以下属性共同决定
+                            margin-left
+                            border-left
+                            padding-left
+                            width
+                            padding-right
+                            border-right
+                            margin-right
+
+                        一个元素在其父元素中满足以下等式
+                            父元素内容区宽度=margin-left + border-left + padding-left + width + padding-right + border-right + margin-right
+                            以上等式必须满足，不成立成为过渡约束，自动调整补齐
+
+                        调整情况
+                            七个值中没有auto情况，自动调整margin-right的值满足等式
+                            七个值中width margin-left  margin-right 可以设置为auto
+                                调整auto值使等式成立，width默认为auto
+                                同时设置宽度和边距auto，宽度达到max，其他margin边距为0
+                                同时设置外边距auto，外边距值保持一致；常利用此水平居中
+                 */ 
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:#bfa;
+
+            border: solid 10px red;         
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"> 
+        <div class="inner"></div>
+    </div>
+    <br>
+    <div class="box2"> </div>
+    <br>
+</body>
+</html>
