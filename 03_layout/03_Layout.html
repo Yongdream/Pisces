@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 1000px;
+            height: 200px;
+            background-color:#bfa;
+
+            border-width: 7px;
+            border-color: crimson;
+            border-style: solid;
+
+            /* overflow: hidden; */
+            overflow: scroll;
+        }
+        .inner{
+            width: auto;
+            height: 350px;
+            background-color: blue; 
+
+            margin-left: 50px;
+                /* 
+                    元素水平方向布局
+                        元素在其父元素中的位置由以下属性共同决定
+                            margin-left
+                            border-left
+                            padding-left
+                            width
+                            padding-right
+                            border-right
+                            margin-right
+
+                        一个元素在其父元素中满足以下等式
+                            父元素内容区宽度=margin-left + border-left + padding-left + width + padding-right + border-right + margin-right
+                            以上等式必须满足，不成立成为过渡约束，自动调整补齐
+
+                        调整情况
+                            七个值中没有auto情况，自动调整margin-right的值满足等式
+                            七个值中width margin-left  margin-right 可以设置为auto
+                                调整auto值使等式成立，width默认为auto
+                                同时设置宽度和边距auto，宽度达到max，其他margin边距为0
+                                同时设置外边距auto，外边距值保持一致；常利用此水平居中
+                    
+                    元素垂直方向布局
+                        默认情况下父元素高度被内容撑开
+                        子元素在父元素内容区排列，大小超过则会发生溢出
+                            使用overflow属性设置父元素处理溢出子元素
+                            可选值
+                                visible 默认值子元素会从父元素溢出，在父元素外显示
+                                hidden  溢出内容将会被裁剪不显示
+                                scroll  生成滚动条查看完整内容
+                                auto    根据需求生成滚动条
+                            overflow-x
+                            overflow-y
+
+
+                 */ 
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:#bfa;
+
+            border: solid 10px red;         
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"> 
+        <div class="inner"></div>
+    </div>
+    <br>
+    <div class="box2"> </div>
+    <br>
+</body>
+</html>

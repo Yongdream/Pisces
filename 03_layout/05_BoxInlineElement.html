@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            background-color: red;
+            padding: 20px;
+            /* 
+                行内元素
+                    不支持设置高度和宽度
+                    可设置padding、margin、border，但是垂直方向不会影响页面布局
+             */
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        a{
+            /* 
+                dispaly 用来设置元素显示的类型
+                    可选值
+                        inline  将元素改为行内元素
+                        block   将元素转换为块元素
+                        inline-block    将元素转换为行内块元素
+                            行内块，既可以设置宽高但是不独占一行
+                        table   将元素转换为表格
+                        none    将元素不显示，不占据位置
+                
+                visibility  用于设置元素的显示状态
+                    可选值
+                        visible 默认值，将元素正常显示
+                        hidden  元素在页面隐藏，依然占据位置
+             */
+             display: block;
+             width: 200px;
+             height: 200px;
+             background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <span class="s1"> i am span</span>
+    <span class="s1"> i am span</span>
+    <div class="box1"> </div>
+    <a href="https://www.baidu.com">hyperlink</a>
+</body>
+</html>

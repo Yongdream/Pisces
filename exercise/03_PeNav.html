@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <style>
+        body{
+            background-color: #333;
+        }
+        .penav{
+            width: 300px;
+            height: auto;
+            background-color:white;
+
+            margin: 70px auto;
+            padding: 10px 5px;
+            overflow: hidden;
+        }
+        .line1{
+            width: 50px;
+            height: 3px;
+            background-color: red;
+            display: inline-block;
+        }
+        .line2{
+            width: 240px;
+            height: 3px;
+            background-color: black;
+            display: inline-block;
+        }
+        .class{
+            font-size: 22px;
+            /* 字体加粗 */
+            font-weight: bold;  
+            color: #333;
+            margin: 5px 0px;
+        }
+
+        .main{
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .main img{
+            width: 100%;
+            
+        }
+        .title {
+            width: 100%;
+            height: 18px;
+            line-height: 30px;
+            font-size: 17px;
+            margin-top: -50px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .title a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .main :hover{
+            font-size: 18px;
+            width: 105%;
+        }
+
+        ul{
+            overflow: hidden;
+        }
+        ul li{
+            width: 100%;
+            height: 25px;
+            padding: 7px;
+            line-height: 25px; 
+            list-style:square;
+        }
+        ul li ::before{
+            content: "■";
+            color: orange;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        ul li a{
+            font-size: 15px;
+            color:#333;
+            text-decoration: none;
+        }
+        ul :hover{   
+            background-color: silver;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="penav">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="class">体育</div>
+        <div class="main">
+            <a href="">
+                <img src="../01_introduce/img/1.png" alt="">
+            <div class="title">
+                <a href="">布鲁克林篮网获得2022年总冠军</a>
+            </div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="">乔治：我爱LA喜欢和LBJ打球</a></li>
+            <li><a href="">格林：三年前降薪就是为了等KD</a></li>
+            <li><a href="">塔克4000w球鞋，乔丹震惊</a></li>
+            <li><a href="">纳什为什么还不下课？</a></li>
+        </ul>
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+</body>
+</html>

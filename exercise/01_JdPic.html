@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .img-list{
+            width: 400px;
+            background-color: orange;
+
+            overflow: hidden;
+            margin: auto;
+        }
+        .img-list li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li>
+            <a href="https://www.baidu.com">
+                <img  src="../01_introduce/img/1.png" alt="one">
+            </a>            
+        </li>
+        <li>
+            <a href="https://www.baidu.com">
+                <img  src="../01_introduce/img/2.png" alt="two">
+            </a>
+            
+        </li>
+        <li>
+            <a href="https://www.baidu.com">
+                <img  src="../01_introduce/img/2.png" alt="two">
+            </a>
+        </li>
+    </ul>
+
+   
+</body>
+</html>
