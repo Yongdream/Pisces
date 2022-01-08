@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            border-radius: 30px;
+            /* 
+                浮动
+                    元素向其父元素左侧或者右侧移动
+                        使用float属性设置元素浮动
+                            可选值
+                                none    默认值
+                                left    元素左浮动
+                                right   元素右浮动
+                    设置float，水平等式不再成立，元素脱离文档流
+                        它在飘哎~~~
+
+                    浮动特点
+                        1.完全脱离文档流，不再占用文档流位置；
+                        2.元素向父元素左侧或右侧移动；
+                        3.浮动元素不会从父元素边界溢出；
+                        4.浮动元素移动时，不会超过其他前面浮动元素
+                        5.浮动元素移动时，不会超过其兄弟元素
+
+                    其他特点
+                        文字自动环绕浮动元素周围
+                        脱离文档流
+                            1.块元素不在占用一行
+                            2.脱离文档流后，块元素宽高被内容撑开
+
+                            1.行内元素会变成块元素，特点类似块元素
+                            不再区分行内元素和块元素
+
+
+
+                    使元素布局可以水平排列
+            */
+            float: right;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border-radius: 30px;
+
+            float: right;
+        } 
+        .box3{
+            background-color: aqua;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptate eum, quas maxime vero voluptates nisi recusandae sunt veniam? Odio ex consequatur assumenda nam numquam alias et esse inventore rem quis tenetur molestiae voluptates officia voluptatibus facilis minus magnam eum, atque architecto. Voluptatibus quasi error accusantium asperiores! Laborum veritatis, et id quam molestiae neque voluptates repellendus deserunt quasi soluta mollitia autem quisquam adipisci! Dicta beatae in error minima dolor harum quaerat laudantium cumque nostrum quam, voluptates ipsum facilis nobis molestiae aut porro ea optio voluptate explicabo qui esse rerum facere sequi. Vel blanditiis tenetur aspernatur, illo eum eaque cumque beatae sequi, voluptatibus sint perspiciatis nemo accusantium ducimus, enim illum officia pariatur repellat a. Illum labore cupiditate molestiae nostrum amet exercitationem necessitatibus velit fugit qui veniam quis dolorum beatae laborum, dolorem ad dicta consequatur neque perspiciatis! Illum nemo repudiandae perferendis mollitia commodi eos neque nostrum. Nihil laudantium temporibus cumque eius, cupiditate blanditiis explicabo, aperiam nemo, repellendus tempore obcaecati similique error esse pariatur. Magni nulla dignissimos tenetur quibusdam suscipit, error neque delectus in nobis aspernatur autem hic saepe asperiores laudantium officiis vitae. Cupiditate ex, aliquid voluptatem modi, sed itaque ea dolor ducimus aliquam, distinctio voluptas possimus facilis consequuntur et iusto quae unde.</p>
+    <br>
+    <div class="box3">iamwhatiam</div>
+</body>
+</html>
