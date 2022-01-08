@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            padding: 10px;
+            /* border: 10px red solid; */
+            outline: 5px red solid;
+            /* 
+                outline 用来设置元素的轮廓线，用法和border一模一样
+                    轮廓不会影响可见框大小，不影响页面布局
+            */
+            box-shadow: 20px 20px 10px rgb(0, 0, .5) ;
+            /* 
+                box-shadow
+                    设置怨怒是的阴影效果，不影响页面局部
+                    第一值  水平偏移    左加右减
+                    第二值  垂直偏移    下加上减
+                    第三值  阴影模糊半径
+                    第四值  颜色        
+             */
+
+            /* 
+                默认情况，盒子可见框大小有padding、border和内容区决定
+                    box-sizing 
+                        更改设置盒子尺寸的计算方式
+                        width和 height的作用范围
+                        可选值
+                            content-box 默认值，宽度和高度用来设置内容区大小
+                            border-box  宽高用来设置可见区域大小
+            */
+
+
+            
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            padding: 10px;
+            border: 5px red solid;
+
+            /* border-radius: 50%; */
+            /* 50%  圆形 */
+            
+            /*设置圆角，圆角设置的使圆的半径大小 */
+            /* 
+                四个值  左上开始顺时针
+                三个值  左上 右上/左下 右下
+                两个值  左上/右下 右上/左下 
+             */
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px 15px;
+            /* 双参数  椭圆 */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <br><br>
+    <div class="box2"></div>
+</body>
+</html>
