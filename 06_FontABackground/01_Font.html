@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            font-face可以将服务器中的字体提供给用户使用
+            加载速度和版权有缺陷
+        */
+        @font-face {
+            /* 指定字体名字，自己取的 */
+            font-family: 'font1' ;
+            /* 服务器中字体的路径 */
+            src: url(./font/FZHXNYTJW.TTF);
+        }
+        p{
+            /* 
+            font-family
+                noraml      普通字体,系统默认使用的字体
+                sans        非衬线字体
+                serif       衬线字体
+                monospace   等宽字体
+                可同时指定多字体，顺次选用
+             */
+            
+            font-size: 35px;
+            color: #333;
+            font-family: font1 ;
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气真不错hhh</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+
+            position: relative;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin-top: auto;
+            margin-left: auto;
+            margin-bottom: auto;
+            margin-right: auto;
+
+            position: absolute;
+
+            /* 
+                水平布局(绝对定位开启)
+                    水平方向等式就需要添加left和right两个值
+                    内容区宽度 = left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right
+
+                        以上等式必须满足，不成立称作过渡约束
+                            9个值均没有 auto 时，则自动调整right以使等式成立
+                            有 auto 调整auto的值使等式成立
+                        可以设置auto的值
+                            margin width left right
+                        
+                        left right默认值为auto
+
+                垂直布局(绝对定位开启)
+                    内容区高度 = top + margin-top/bottom + padding-top/bottom + border-top/bottom + height
+
+            */
+            left: 0;
+            right: 0;
+
+            top: 0;
+            bottom: 0;
+            /* 实现居中 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
