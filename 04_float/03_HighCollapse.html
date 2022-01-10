@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            margin: 50px 100px;
+            border: 10px #333 solid;
+            float: left;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            /* 
+                高度塌陷
+                    父元素默认由子元素撑开
+                    内部元素设置为float之后无法再撑起父元素的高度
+
+                父元素高度塌陷其下元素上移，导致页面布局紊乱
+            */
+            /* 
+                BFC(Block Formatting Context)
+                    块级格式化环境，无法直接设置间接开启
+                    元素开启BFC，元素将成为一个独立的布局区域      
+                    特点
+                        不会被浮动元素所覆盖
+                        *子元素的外边距和父元素的外边距不会重叠
+
+                    开启BFC
+                        1.设置元素浮动(Not recommended)
+                        2.将元素设置为行内块元素(Not recommended)
+                        3.overflow设置为一个非visible的值
+            */
+            /* float: left; */
+            /* display: inline-block; */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
