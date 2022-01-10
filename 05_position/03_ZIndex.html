@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        .box1{
+            width: 200px;   
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+
+        }
+        .box2{
+            width: 200px;   
+            height: 200px;
+            background-color:rgb(255, 255, 0,0.5);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+            /* 
+                开启绝对定位元素
+                    z-index属性来指定元素的层级
+                        层级数值越大越顶上显示
+                        若层级数字一样，html中的靠下的率先显示
+                    祖先元素永远不会盖住后代元素(后浪！)
+            */
+        }
+        .box3{
+            width: 200px;   
+            height: 200px;
+            background-color:tomato;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+        .box4{
+            width: 50px;   
+            height: 50px;
+            background-color: silver;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">
+        3
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

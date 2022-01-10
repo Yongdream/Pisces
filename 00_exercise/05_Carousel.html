@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            background-color: #333;
+        }
+        .imglist{
+            width: 700px;
+            height: 400px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .imglist img{
+            width: 700px;
+            height: auto;
+            position: absolute;
+        }
+        .cir{
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            /* width设置为700px则无法居中显示？？？ */
+
+            position: absolute;
+            bottom: 20px;
+
+            left: 0;
+            right: 0;
+
+            z-index: 999;
+        }
+        .cir a{
+            width: 13px;
+            height: 13px;
+            background-color: rgb(255, 255, 255,0.6);
+            border-radius: 50%;
+            margin-left: 6px;
+
+            /* 将背景颜色设置到内容区，边框和内边距不再有背景色 */
+            border: 3px solid transparent;
+            background-clip: content-box;
+            float: left;
+        }
+        .cir a.active,
+        .cir a:hover{
+            background-color: white;
+            border: 3px solid rgb(255, 255, 255,0.3);
+        }
+       
+    </style>
+</head>
+<body>
+        <ul class="imglist">
+            <li> <img src="../01_introduce/img/1.png" alt=""><a href=""></a></li>
+            <li><img src="../01_introduce/img/2.png" alt=""><a href=""></a></li> 
+            <li><img src="../01_introduce/img/3.png" alt=""><a href=""></a></li> 
+            <li><img src="../01_introduce/img/4.png" alt=""><a href=""></a></li>
+             
+            <div class="cir">
+                <a class="active" href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </ul>
+        
+</body>
+</html>
