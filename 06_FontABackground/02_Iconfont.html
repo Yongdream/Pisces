@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../00_exercise/css/reset.css">
+    
+    
+    <!-- 引入图标字体 -->
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+
+    <style>
+        .fa-bell{
+            font-size: 100px;
+            color: brown;
+        }
+        li::before{
+            content: '\f6d7';
+            /* 
+                font-family: 'Font Awesome 5 Brands'; 
+                font-weight: 400;
+
+                font-family:'Font Awesome 5 Free';
+                font-weight: 900;
+            */
+
+            font-family:'Font Awesome 5 Free';
+            font-weight: 900;
+            color: brown;
+        }
+
+        .yz li::after{
+            content: '\e6a7';
+            font-family: 'iconfont';
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        fontawesome
+            使用方法：直接使用类名使用图标字体
+                class="fas fa-bell"
+                class="fab fa-accessible-icon"
+     -->
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-bell-slash"></i>
+    <i class="fab fa-accessible-icon"></i>
+    <i class="fas fa-drumstick-bite"></i>
+    <i class="fas fa-otter" style="font-size: 80px; color:green;"></i>
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+
+    <!-- 
+        通过实体来使用图标字体：
+            &#x图标的编码;
+            类名要指定
+     -->
+     <span class="fas" style="font-size: 50px;">&#xf6ec;</span>
+     <span class="iconfont" style="font-size: 50px;">&#xe68b;</span>
+    <i class="iconfont icon-canyin" style="font-size: 80px; color:green;"></i>
+
+    <ul class="yz">
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+</body>
+</html>

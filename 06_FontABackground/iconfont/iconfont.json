@@ -1,0 +1,51 @@
+{
+  "id": "3133542",
+  "name": "yz",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "657463",
+      "name": "餐饮",
+      "font_class": "canyin",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "657465",
+      "name": "景点",
+      "font_class": "jingdian",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "666879",
+      "name": "轮船",
+      "font_class": "lunchuan",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "666898",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "667501",
+      "name": "radio button",
+      "font_class": "radiobutton",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "670724",
+      "name": "起飞",
+      "font_class": "qifei",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    }
+  ]
+}
