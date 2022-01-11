@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+
+    <style>
+        .clearfix::after,
+        .clearfix::before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        body{
+            margin: auto;
+            background-color: #bfa;
+            font-size: 13px;
+            color: #999;
+            font:13px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+        }
+        .location a,
+        .shortcut span,
+        .shortcut a{
+            color: #999;
+        }
+        .head{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background-color: #e3e4e5;
+
+        }
+        .nav{
+            margin:0px 220px;
+        }
+        .location{
+            float: left;
+        } 
+        .shortcut {
+            float: right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        .spacer{
+            width: 1px;
+            height: 13px;
+            color: white;
+            background-color: #999;
+            margin: 10px 5px 0;
+        }
+        .location i{
+            color: tomato;
+        }
+        .location:hover{
+            background-color: white;
+        }
+        .currcity{
+            margin: 0 10px;
+        }
+        .citylist{
+            display: none;
+            width: 240px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+            position: absolute;
+        }
+        .location:hover .citylist{
+            display: block;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .nav a.red,
+        .nav a:hover
+        {
+            color: red;
+        }
+        .drop a,
+        .drop span{
+            margin: 0 4px;
+        }
+
+        .shortcut li.drop a::after,
+        .shortcut li.drop span::after{
+            content: '\f078';
+            font-family: 'Font Awesome 5 Free';
+            font-size: 5px;
+            font-weight: 900; 
+            color: #999;
+            margin-left: 3px; 
+        }
+        .wd:hover{
+            background-color: white;
+        }
+        .wod{
+            display: none;
+            width: 240px;
+            height: 100px;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+            position: absolute;
+        }
+        .wd:hover .wod{
+            display: block;
+        }
+
+        .cg:hover{
+            background-color: white;
+        }
+        .caigou{
+            display: none;
+            width: 240px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+            position: absolute;
+        }
+        .cg:hover .caigou{
+            display: block;
+        }
+
+        .kf:hover{
+            background-color: white;
+        }
+        .kefu{
+            display: none;
+            width: 240px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+            position: absolute;
+        }
+        .kf:hover .kefu{
+            display: block;
+        }
+
+        .wz:hover{
+            background-color: white;
+        }
+        .wangz{
+            display: none;
+            width: 240px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+            position: absolute;
+        }
+        .wz:hover .wangz{
+            display: block;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="nav clearfix">
+        <div class="location">
+            <div class="currcity">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="javascript:;">苍南</a>
+            </div>
+            <div class="citylist"></div>
+        </div>
+        <ul class="shortcut clearfix">
+            <li class="one">
+                <a class="norm" href="">你好，请登录</a>
+                <a class="red" href="">免费注册</a>
+            </li>
+            <li class="spacer"></li>
+            <li><a class="norm" href="">我的订单</a></li>
+            <li class="spacer"></li>
+            <li class="drop wd">
+                <a class="" href="">我的京东</a>
+                <div class="wod"></div>
+            </li>
+            <li class="spacer"></li>
+            <li><a class="norm" href="">京东会员</a></li>
+            <li class="spacer"></li>
+            <li class="drop cg">
+                <a class="red" href="">企业采购</a>
+                <div class="caigou"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="drop kf">
+                <span class="norm" >客服服务</span>
+                <div class="kefu"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="drop wz">
+                <span class="norm" >网站导航</span>
+                <div class="wangz"></div>
+            </li>
+            <li class="spacer"></li>
+            <li><span class="norm">手机京东</span></li>
+            <li class="spacer"></li>
+            <li><a class="" href="">网络无障碍</a></li>
+        </ul>
+            
+       
+    </div>
+</body>
+</html>

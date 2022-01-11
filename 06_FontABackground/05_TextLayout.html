@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 
+                text-align 文本的水平对齐
+                    可选值：
+                        left 左侧对齐
+                        right 右对齐
+                        center 居中对齐
+                        justify 两端对齐
+
+                vertical-align 设置元素垂直对齐的方式
+                    可选值：
+                        baseline 默认值 基线对齐
+                        top    顶部对齐
+                        bottom 底部对齐
+                        middle 居中对齐
+                        可以指定数值
+
+                text-decoration 设置文本修饰
+                    可选值：
+                        none            无
+                        underline       下划线
+                        line-through    删除线
+                        overline        上划线
+                
+                white-space 设置网页如何处理空白(省略号)
+                    可选值：
+                        normal 正常
+                        nowrap 不换行
+                        pre 保留空白
+            */
+            height: auto;
+
+            text-align: justify;
+
+            /* 溢出内容省略号 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+        .yz{
+            font-size: 18px;
+            text-decoration: overline green;
+        }
+        span{
+            font-size: 30px;
+            border: 2px rebeccapurple solid;
+            vertical-align: bottom;
+            white-space: pre;
+        }
+        img{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus culpa deleniti repudiandae? Incidunt, minima? Nam hic magnam cupiditate optio inventore nobis soluta corrupti enim, illo tempore pariatur officiis facilis consequuntur qui, reprehenderit unde voluptatem accusamus ut, quas tempora veritatis numquam ratione! Exercitationem adipisci quis error ex dolor ab repellendus, magni, in similique sunt minima accusantium! Vero tenetur unde, vel pariatur quidem ipsam! Adipisci minus unde tempora facere quibusdam libero fugit molestias sed sit nisi odio ex dolorum consequuntur labore repudiandae perferendis, porro cumque maxime incidunt neque! Asperiores ullam modi adipisci, quae iusto architecto est iure perspiciatis tempora, similique eaque voluptas, ipsam totam nam saepe hic? Nobis in suscipit sunt eos pariatur enim nemo molestiae, maiores est? Consequatur, architecto doloremque est quo reprehenderit iste quae corporis ipsa dolor? Sunt quod incidunt facere. 
+    </div>
+
+    <div class="yz">
+        今天你好<span>漂亮  
+            2
+             1
+             Hello</span>！
+    </div>
+    <p>
+        <img src="./img/an.jpg" alt=""> 
+     </p>
+</body>
+</html>
