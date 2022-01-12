@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDisplay</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        .clearfix::after,
+        .clearfix::before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .dispaly{
+            width: 240px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .pic{
+            width: 100%;
+        }
+        .text,
+        .comment{
+            padding: 16px 20px;
+        }
+        .head{
+            font-size: 20px;
+            color: rgb(99, 99, 99);
+        }
+        .loc{
+            margin: 10px 0;
+        }
+        .loc *{
+            float: left;
+            color: #999;
+            margin: 0 3px;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        .profile{
+            margin: 4px 4px;
+            line-height: 20px;
+            font-size: 13px;
+        }
+        
+        .comment{
+            border-top: 1px solid #e9e9e9;
+            line-height: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .comment .star{
+            float: left;
+        }
+
+        .comment .light{
+            color: #b9cb41;
+        }
+        .wb{
+            float: right;
+        }
+        .copy{
+            width: 240px;
+            height: 15px;
+            line-height: 15px;
+
+            /* box-sizing: border-box; */
+            padding-bottom: 10px;
+
+            font-size: 10px;
+            color: #e9e9e9;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dispaly">
+        <div class="pic">
+            <img src="./10/1.jpg" alt="">
+        </div>
+        <div class="text ">
+            <div class="head">Animation films</div>
+            <div class="loc clearfix">
+                <div class="fas fa-map-marker-alt" style="font-size: 14px;"></div>
+                <div class="title">Animations</div>
+            </div>
+            <div class="profile">You are so beautiful today ! </div>
+        </div>
+        <div class="comment ">
+            <ul class="star clearfix">
+               <li class="fas fa-star light"></li>
+               <li class="fas fa-star light"></li>
+               <li class="fas fa-star"></li>
+               <li class="fas fa-star"></li>
+            </ul>
+            <div class="wb clearfix">
+                <div class="fab fa-twitter"></div>
+            </div>
+            
+        </div>
+        <div class="copy">
+            &copy;yang7hi
+        </div>
+    </div>
+</body>
+</html>

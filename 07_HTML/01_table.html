@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!-- table标签来创建一个表格 -->
+     <!-- 
+        tr      行数
+        tr中td  单元格数
+     -->
+    <!-- 
+        rowspan 纵向的合并单元格
+        colspan 横向的合并单元格
+    -->
+
+    <table border="1" width="50%" align="center" >
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+            <td>A4</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td></td>
+            <td colspan="2"></td>
+            
+        </tr>
+    </table>
+    
+    <br>
+    <!-- 
+            可以将一个表格分成三个部分：
+                头部 thead
+                主体 tbody
+                底部 tfoot
+
+                th 表示头部的单元格
+     -->
+    <table border="1" width="50%" align="center">
+        <thead>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td>合计</td>
+            <td>500</td>
+        </tfoot>
+    </table>
+</body>
+</html>
