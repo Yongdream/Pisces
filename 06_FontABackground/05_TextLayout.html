@@ -15,12 +15,12 @@
                         center 居中对齐
                         justify 两端对齐
 
-                vertical-align 设置元素垂直对齐的方式
+                vertical-align 设置元素垂直对齐的方式(相对于父元素而言)
                     可选值：
-                        baseline 默认值 基线对齐
-                        top    顶部对齐
-                        bottom 底部对齐
-                        middle 居中对齐
+                        baseline    默认值 基线对齐
+                        top         使元素及其后代元素的顶部与整行的顶部对齐
+                        bottom      使元素及其后代元素的底部与整行的底部对齐
+                        middle      居中对齐
                         可以指定数值
 
                 text-decoration 设置文本修饰
@@ -53,12 +53,13 @@
         .yz{
             font-size: 18px;
             text-decoration: overline green;
+            
         }
         span{
-            font-size: 30px;
+            font-size: 10px;
             border: 2px rebeccapurple solid;
-            vertical-align: bottom;
-            white-space: pre;
+            vertical-align: top;
+            /* white-space: pre; */
         }
         img{
             vertical-align: bottom;
@@ -74,7 +75,7 @@
         今天你好<span>漂亮  
             2
              1
-             Hello</span>！
+             Hello</span>!
     </div>
     <p>
         <img src="./img/an.jpg" alt=""> 

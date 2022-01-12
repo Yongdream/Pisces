@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- 
+        表单 form
+            作用：本地数据提交给服务器
+            属性
+                active  表单提交的服务器
+            
+            数据要提交到服务器中，必须要为元素指定一个name属性值
+            注意类型type
+     -->
+    <form action="target.html" autocomplete="off">
+        <!-- 
+            autocomplete="off"      关闭自动补全
+            readonly                将表单项设置为只读，数据会提交
+            disabled                将表单项设置为禁用，数据不会提交
+            autofocus               设置表单项自动获取焦点,刷新后率先选中
+         -->
+        文本框
+        <br>
+        <input type="text" name="tx" value="abc" >
+        <br>
+        <input type="text" name="a" value="qwe" readonly> 
+        <br>
+        <input type="text" name="b" value="qwe" disabled> 
+        <br>
+        <input type="text" name="yz" value="" autofocus>
+
+        <br>
+        <br>
+        密码框
+        <input type="password" name="pwd">
+        <br>
+
+        <!-- 
+            选择框，必须要指定value
+                属性值最终会传递给服务器
+                - checked 默认选中
+
+            下拉框
+                - selected 默认选中
+        -->
+        单选
+        <input type="radio" checked name="danxuan" value="1">
+        <input type="radio" name="danxuan" value="2">
+        <input type="radio" name="danxuan" value="3">
+        <input type="radio" name="danxuan" value="4">
+        <br>
+        多选
+        <input type="checkbox" name="duox" value="a">
+        <input type="checkbox" name="duox" value="b">
+        <input type="checkbox" name="duox" value="c" checked>
+        <input type="checkbox" name="duox" value="d">
+        <br>
+        下拉框
+        <select name="xiala">
+            <option value="q">one</option>
+            <option value="w">two</option>
+            <option value="d" selected>three</option>
+            <option value="s">four</option>
+            <option value="a">five</option>
+            <option value="x">six</option>
+        </select>
+        <br>
+        
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+        <!-- 重置按钮 -->
+        <input type="reset" value="重置">
+        <!-- 普通按钮 -->
+        <input type="button" value="按钮" >
+    </form>
+</body>
+
+</html>
