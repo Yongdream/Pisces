@@ -1,0 +1,415 @@
+/* 顶部全导航条 */
+.header {
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+/* float水平排列 */
+.hhead,
+.topbar-info div,
+.hhead div {
+    float: left;
+}
+.topbar-cart,
+.topbar-info {
+    float: right;
+}
+
+/* 超链接样式 */
+.site-topbar a {
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+}
+/* 超链接移入效果 */
+.site-topbar a:hover {
+    color: #fff;
+}
+
+.app {
+    position: relative;
+}
+/* 弹出二维码框样式 */
+#appbox {
+    width: 128px;
+    /* height: 148px; */
+
+    position: absolute;
+    left: -40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 1;
+
+    z-index: 9999;
+
+    /* transition: 用于为样式设置过渡效果 */
+    overflow: hidden;
+    height: 0px;
+    transition: height 3s;
+    /* display: none; */
+}
+#appbox img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+#appbox span {
+    font-size: 14px;
+    color: #000;
+}
+.app:hover #appbox {
+    display: block;
+    height: 148px;
+}
+/* 弹出三角形 */
+.app:hover ::after {
+    content: "";
+    width: 0;
+    height: 0px;
+    border: 8px transparent solid;
+    border-top: none;
+    border-bottom-color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+}
+
+/* 分割线效果 */
+.line {
+    color: #424242;
+    margin: 0 7px;
+}
+
+/* 购物车样式 */
+.topbar-cart {
+    width: 120px;
+    text-align: center;
+    background-color: #616166;
+    margin-left: 25px;
+    position: relative;
+}
+/* 购物车移入效果 */
+.topbar-cart:hover a {
+    color: #ff6700;
+    background: white;
+}
+/* 触碰购物车弹窗 */
+.topbar-cart .carbox {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.3);
+    z-index: 999;
+
+    display: none;
+}
+.topbar-cart .carbox span {
+    line-height: 1;
+    color: rgb(141, 141, 141);
+    letter-spacing: 1px;
+}
+.topbar-cart:hover .carbox {
+    display: block;
+}
+
+.site-header {
+    position: relative;
+}
+
+/* Logo导航整体样式 */
+.site-header-contain {
+    /* background-color: #bfa; */
+    height: 100px;
+}
+
+/* logo容器 */
+.header-logo {
+    float: left;
+    margin-top: 22px;
+    width: 57px;
+    height: 57px;
+    overflow: hidden;
+    position: relative;
+}
+.header-logo a {
+    width: 55px;
+    height: 55px;
+    left: 0px;
+    background-color: #ff6700;
+    border-radius: 22px;
+
+    background-position: center;
+    position: absolute;
+    transition: left 0.3s;
+}
+
+/* logo内饰 */
+/* .header-logo a.home{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+} */
+.header-logo a.mi {
+    background-image: url(../img/mi-logo.png);
+}
+
+/* .header-logo:hover .home{
+    left: 0;
+} */
+.header-logo:hover .mi {
+    left: 2px;
+}
+
+/* 头部导航 */
+.header-nav {
+    float: left;
+    height: 100px;
+    line-height: 80px;
+    /* background-color: #bfa; */
+    padding-left: 70px;
+}
+.header-nav .all {
+    position: relative;
+}
+
+.header-nav > div {
+    float: left;
+}
+.header-nav > div > a {
+    margin: 10px 0;
+    display: block;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.header-nav div.all > a {
+    visibility: hidden;
+}
+/* 左侧导航 */
+.header-nav .all .left-meun {
+    float: left;
+    box-sizing: border-box;
+    width: 234px;
+    height: 460px;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 999;
+    left: -127px;
+    line-height: 1;
+    padding: 20px 0px;
+}
+.keft-category div {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+}
+.left-meun .keft-category a {
+    display: block;
+
+    font-size: 16px;
+    color: #fff;
+}
+.left-meun .keft-category i {
+    float: right;
+    font-size: 16px;
+    line-height: 42px;
+    color: #fff;
+}
+.keft-category div:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.header-nav > div > a:hover {
+    color: #ff6700;
+}
+
+/* 下拉框 */
+.drop-show {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    background-color: #fff;
+    z-index: 999;
+
+    transition: height 1s;
+}
+.header-nav .show-nav:hover ~ .drop-show,
+.header-nav .drop-show:hover {
+    height: 200px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+/* 搜索框 */
+.header-search {
+    float: right;
+    width: 296px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #616166;
+    right: 0;
+    margin-top: 25px;
+}
+.search-inp {
+    box-sizing: border-box;
+    float: left;
+    width: 244px;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 15px;
+    font-size: 16px;
+}
+.search-btn {
+    float: left;
+    width: 52px;
+    height: 50px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid rgb(224, 224, 224);
+    color: #ff6700;
+    font-size: 20px;
+}
+.search-inp:focus {
+    border-color: #ff6700;
+}
+.search-btn:hover {
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+    color: #fff;
+}
+
+/* 轮播图 */
+.slide-wrapper .slide {
+    height: 460px;
+    position: relative;
+}
+.slide img {
+    position: absolute;
+    width: 100%;
+    vertical-align: top;
+}
+.points {
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+.points a{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 3px transparent solid;
+    border-radius: 50%;
+
+    background-color: rgb(255, 255, 255, 0.6);
+    margin-left: 6px;
+
+    background-clip: content-box;
+    float: left;
+}
+
+.points a:hover,
+.points a.active {
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 3px solid rgb(255, 255, 255, 0.3);
+}
+
+.arrow div{
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/icon-slides.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.arrow-nex{
+    left: 234px;
+    background-position: -84px 0;
+}
+.arrow-nex:hover{
+    background-position: 0 0;
+}
+.arrow-pre{
+    right: 0;
+    background-position: -125px 0;
+}
+.arrow-pre:hover{
+    background-position: -42px 0;
+}
+.backtop a{
+    position: fixed;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    background-color: #ff6700;
+    bottom: 88px;
+    right: 50%;
+    margin-right: -646px;
+    color: #fff;
+    text-align: center;
+}
+.backtop a:hover{
+    bottom: 89px;
+}
+
+.middle{
+    margin-top: 14px;
+}
+.shortcut{
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+.shortcut ,
+.shortcut a{
+    float: left;
+}
+.shortcut div{
+    float: left;
+}
+.shortcut a{
+    display: block;
+    color: #cfccca;
+    height: 85px;
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+    /* overflow: hidden; */
+}
+.shortcut i{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-size: 20px;  
+}
+
+.imgs{
+    float: right;
+    /* background-color: #333; */
+}
+.imgs a{
+    display: block;
+    width: 316px;
+    float: right;
+}
+.imgs img{
+    width: 316px;
+}
+.imgs a:not(:last-child){
+    margin-left: 15px;
+}
+
