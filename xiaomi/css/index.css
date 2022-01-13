@@ -27,8 +27,25 @@
     color: #fff;
 }
 
-.app {
+.app{
     position: relative;
+}
+
+/* 弹出三角形 */
+.app:hover::after{
+    content: "";
+    width: 0;
+    height: 0px;
+    border: 8px transparent solid;
+    border-top: none;
+    border-bottom-color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
 }
 /* 弹出二维码框样式 */
 #appbox {
@@ -44,11 +61,19 @@
 
     z-index: 9999;
 
-    /* transition: 用于为样式设置过渡效果 */
+    /* 
+        transition
+            用于为样式设置过渡效果 
+            设置值前后要发生改变
+    */
     overflow: hidden;
     height: 0px;
-    transition: height 3s;
+    transition: height 5s;
     /* display: none; */
+}
+.app:hover #appbox {
+    display: block;
+    height: 148px;
 }
 #appbox img {
     width: 90px;
@@ -59,26 +84,9 @@
     font-size: 14px;
     color: #000;
 }
-.app:hover #appbox {
-    display: block;
-    height: 148px;
-}
-/* 弹出三角形 */
-.app:hover ::after {
-    content: "";
-    width: 0;
-    height: 0px;
-    border: 8px transparent solid;
-    border-top: none;
-    border-bottom-color: #fff;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 999;
-}
+
+
 
 /* 分割线效果 */
 .line {
@@ -304,7 +312,7 @@
     bottom: 22px;
     right: 35px;
 }
-.points a{
+.points a {
     float: left;
     width: 8px;
     height: 8px;
@@ -324,7 +332,7 @@
     border: 3px solid rgb(255, 255, 255, 0.3);
 }
 
-.arrow div{
+.arrow div {
     width: 41px;
     height: 69px;
     background-image: url(../img/icon-slides.png);
@@ -333,21 +341,33 @@
     bottom: 0;
     margin: auto 0;
 }
-.arrow-nex{
+.arrow-nex {
     left: 234px;
     background-position: -84px 0;
 }
-.arrow-nex:hover{
+.arrow-nex:hover {
     background-position: 0 0;
 }
-.arrow-pre{
+.arrow-pre {
     right: 0;
     background-position: -125px 0;
 }
-.arrow-pre:hover{
+.arrow-pre:hover {
     background-position: -42px 0;
 }
-.backtop a{
+
+/* 设置回到顶部的元素 */
+/* 
+    布局的等式
+        position: position: fixed;
+            相对于视口进行定位
+        left + margin-left + width + margin-right + right = 视口的宽度
+
+        auto + 0 + 26 + 0 + 60 = 视口宽度
+
+        auto + 0 + 26 + -639px + 50% = 视口宽度
+*/
+.backtop a {
     position: fixed;
     width: 33px;
     height: 33px;
@@ -360,28 +380,29 @@
     color: #fff;
     text-align: center;
 }
-.backtop a:hover{
+.backtop a:hover {
     bottom: 89px;
 }
 
-.middle{
+/* 中部展示区域 */
+.middle {
     margin-top: 14px;
 }
-.shortcut{
+.shortcut {
     width: 228px;
     height: 168px;
     background-color: #5f5750;
     padding-top: 2px;
     padding-left: 6px;
 }
-.shortcut ,
-.shortcut a{
+.shortcut,
+.shortcut a {
     float: left;
 }
-.shortcut div{
+.shortcut div {
     float: left;
 }
-.shortcut a{
+.shortcut a {
     display: block;
     color: #cfccca;
     height: 85px;
@@ -390,26 +411,25 @@
     font-size: 12px;
     /* overflow: hidden; */
 }
-.shortcut i{
+.shortcut i {
     display: block;
     margin-top: 20px;
     margin-bottom: 6px;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
-.imgs{
+.imgs {
     float: right;
     /* background-color: #333; */
 }
-.imgs a{
+.imgs a {
     display: block;
     width: 316px;
     float: right;
 }
-.imgs img{
+.imgs img {
     width: 316px;
 }
-.imgs a:not(:last-child){
+.imgs a:not(:last-child) {
     margin-left: 15px;
 }
-
