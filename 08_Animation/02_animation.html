@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 900px;
+            height: 700px;
+            background-color: #333;
+        }
+        /* 
+            animation-name
+                要对当前元素生效的关键帧的名字
+        */
+        /* 
+            animation-duration
+                动画的执行时间
+        */
+        /*  animation-delay
+                动画的延时 
+        */
+        /* 
+            animation-iteration-count 动画执行的次数 
+                可选值：
+                    次数
+                    infinite 无限执行 
+        */
+        /*
+             animation-direction
+                指定动画运行的方向
+                    可选值：
+                    normal 默认值       从 from 向 to 运行  
+                    reverse             从 to 向 from 运行    
+                    alternate           从 from 向 to 运行      交替重复运行
+                    alternate-reverse   从 to 向 from 运行      交替反向执行
+        */
+        /* 
+            animation-play-state: 设置动画的执行状态 
+            可选值：
+                running 默认值 动画执行
+                paused 动画暂停
+        */
+        /* 
+            animation-fill-mode: 动画的填充模式
+                可选值：
+                    none 默认值     动画执行完毕元素回到原来位置
+                    forwards        动画执行完毕元素会停止在动画结束的位置
+                    backwards       动画 延时等待 时，元素就会处于开始位置！！！
+                    both 结合了forwards 和 backwards 
+        */
+        /* 
+            animation-timing-function
+                过渡的时序函数，指定过渡的执行的方式,可选值同transition类似
+                ease 默认值，慢速开始，先加速，再减速
+                    linear 匀速运动
+                    ease-in 加速运动
+                    ease-out 减速运动
+                    ease-in-out 先加速 后减速
+
+        */
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            
+            /* 运行必备 */
+            animation-name: boxa;
+            animation-duration: 5s;
+
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+
+        }
+        .box2:hover{
+            animation-play-state: paused;
+        }
+      
+        /* 
+            动画
+                动画自动触发动态效果，不同于过渡
+        */
+        @keyframes boxa {
+            from{
+                margin-left: 10px;
+                background-color: red;
+            }
+            to{
+                margin-left: 800px;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
