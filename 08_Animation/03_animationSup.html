@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 700px;
+            border-bottom: #333 3px solid;
+            overflow: hidden;
+            padding: 0 450px ;
+        }
+        .box1 div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+        .box2{            
+            /* 运行必备 */
+            animation-name: boxa;
+            animation-duration: 2s;
+            
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+        .box3{
+            animation-name: boxa;
+            animation-duration: 2s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 0.2s;
+        }
+        .box4{
+            animation-name: boxa;
+            animation-duration: 2s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 0.4s;
+        }
+        .box5{
+            animation-name: boxa;
+            animation-duration: 2s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 0.6s;
+        }
+        .box6{
+            animation-name: boxa;
+            animation-duration: 2s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 0.8s;
+        }
+        .box1:hover *{
+            animation-play-state: paused;
+        }
+        
+
+      
+        @keyframes boxa {
+            /* 
+                from=0%
+            */
+            from{
+                margin-top: 0px;
+                background-color: red;
+            }
+            30%{
+                margin-top: 100px;
+                animation-timing-function: ease-in;
+            }
+            80%{
+                margin-top: 260px;
+                animation-timing-function: ease-in;
+            }
+            20%,50%{
+                margin-top: 600px;
+                animation-timing-function: ease-out;
+            }
+            to{
+                margin-top: 600px;
+                background-color: blue;
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>
